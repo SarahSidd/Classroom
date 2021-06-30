@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ClassRoom</title>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    
+   #ClassRoom{
+      margin-top: 1%;
+      margin-left: 0.5%;
+      width: 99%;
+      border: 2px;
+      background: darkturquoise;
+      padding: 0.5%;
+      border-radius: 25px;
+      border: 2px ;
+    }
+    
+    .nav ul{
+    list-style-type: none;
+    padding: 0 ;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    font-family: Arial;
+
+  }
+  .nav a {
+   
+    font-size: 25px;
+    font-family: serif;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+  
+}
+
+  .nav ul li:nth-child(1){
+    float: right;
+  }
+  .nav ul li:nth-child(2){
+    float: right;
+    }
+    .nav ul li:nth-child(3){
+    float: right;
+    }
+
+  .nav ul li a:hover{
+    color: tomato;
+  }
+
+    
+       
+   .container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+  
+    .column {
+  float: left;
+  width: 20%;
+  height: 470px;
+  margin-left: -10px;
+}
+
+.middle{
+  width: 40%;
+  margin-left: 250px;
+
+}
+.right{
+  width: 40%;
+  margin-left: 750px;
+  margin-top:-550px;
+
+}
+
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  .school-features,
+.school-instructors {
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 576px) {
+  .school-features,
+  .school-instructors {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 576px) {
+  .school-features .inner,
+  .school-instructors .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+
+.school-features .feature, .school-features .instructor,
+.school-instructors .feature,
+.school-instructors .instructor {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .school-features .feature, .school-features .instructor,
+  .school-instructors .feature,
+  .school-instructors .instructor {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .school-features .feature, .school-features .instructor,
+  .school-instructors .feature,
+  .school-instructors .instructor {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .school-features .feature, .school-features .instructor,
+  .school-instructors .feature,
+  .school-instructors .instructor {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 30px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+.school-features .feature h3, .school-features .instructor h3,
+.school-instructors .feature h3,
+.school-instructors .instructor h3 {
+  font-size: 18px;
+  color: #fff;
+}
+
+
+
+.school-features .feature img, .school-features .instructor img,
+.school-instructors .feature img,
+.school-instructors .instructor img {
+  width: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+
+
+/*border*/
+
+@media (min-width: 992px) {
+  .school-features.text-dark .feature,
+  .school-instructors.text-dark .feature {
+    border-right: 2px solid #e6e6e6;
+    border-bottom: 2px solid #e6e6e6;
+  }
+}
+
+
+/*name*/
+.school-features.text-dark .feature h3,
+.school-instructors.text-dark .feature h3 {
+  font-size: 20px;
+  color: tomato;
+}
+
+/*font color*/
+.school-features.text-dark .feature p,
+.school-instructors.text-dark .feature p {
+  color: black;
+  opacity: .7;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+  <div  id="ClassRoom" ><!--header-->
+
+
+    <div class="nav">
+    
+    <ul>
+      <li>
+        <a href="login.html"><img style="width: 70%;" src="images/login.png"></a>
+      </li>
+      <li>
+        <a href="question.html"><img style="width: 70%;" src="images/question.png"></a>
+</a>
+      </li>
+      <li>
+        <a href="assignment.html"><img style="width: 70%;" src="images/list.png"></a>
+      </li>
+
+    </ul>
+
+  
+
+  </div>
+  </div><!--end header-->
+  <a href="index.html" style="text-decoration: none;"><h1 style="margin-top: -3%; margin-left:3%; font:italic bold 40px/35px Georgia, serif; color:grey;" >ClassRoom</h1></a>
+
+
+    <div class="container">
+      <div class="w3-container w3-center w3-animate-bottom">
+                <img src="images/img_bg_3.jpg"  style="width:100%;height:650px;">
+                    <div style=" font-family: serif;font-size: 300%;color: black;"   class="centered"><p>WHY WE STARTED E-LEARNING</p></div>
+                        <div class="centered">
+  
+                            <h2 style="margin-top: 90%;font-family: serif; "><span style="color: white;"><a href="index.html">Home</a> | about</span></h2>
+
+                        </div>
+           </div>
+       </div>
+
+
+ <!--about us--> 
+  <div class="container">
+        <div class="row justify-content-center mb-5">
+
+          <div class="col-md-7 text-center">
+            <h2 style="color: tomato;">We Share Our Thoughts</h2>
+          </div>
+
+        </div>
+
+
+<!--about us1-->
+  <div class="row">
+      <div class="column1 lef" style="width: 25%;">
+         <h1 style="font-size: 35px; font-style: oblique;margin-top: 100px;margin-left: 35px;color:black"><p style=" border-style: hidden;
+              border-right: solid tomato;margin-right:-130px;">First, We Love To Teach</p></h1>
+      </div>
+
+      <div class="column1 rig" style="width: 90%;height: 30px;margin: 5px 5px 5px 5px;">
+         <p style="margin-top:-10%;margin-left: 50%;font-size: 20px;color: black;">Now-a-days peoples are getiing  connected with various sites.Classroom, is the creation of studies.By this site one can interact with theire mentors.
+         </p>
+      </div>
+
+<!--about us2-->
+  <div class="row">
+    <div class="column" style="width: 45%;height: 10%;">
+         <p style="margin-top: 50%;margin-left: 100px;font-size: 20px;color: black;">Our mission is to start you on a path toward future studies in online, no matter how little experience or technical knowledge you currently have.Every teachers lecture of every course will find here,if you search.
+             </p>
+      </div>
+
+      <div class="column" style="width: 25%;">
+      <h1 style="font-size: 35px; font-style: oblique;margin-top: 90%;margin-left: 150px;color:black"><p style=" border-style: hidden;
+             border-left: solid tomato;margin-right:-180px;">Grab This  Opportunity</p></h1>
+      </div>
+
+   </div>
+
+  </div>
+</div>  
+
+      <footer class="w3-container w3-teal w3-center w3-margin-top">
+ 
+  <p>Powered by ClassRoom</a></p>
+</footer>
+  
+
+
+  </div>
+</body>
+</html>

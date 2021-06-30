@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ClassRoom</title>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    
+    #ClassRoom{
+      margin-top: 1%;
+      margin-left: 0.5%;
+      width: 99%;
+      border: 2px;
+      background: darkturquoise;
+      padding: 0.5%;
+      border-radius: 25px;
+      border: 2px ;
+    }
+    
+    .nav ul{
+    list-style-type: none;
+    padding: 0 ;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    font-family: Arial;
+
+  }
+  .nav a {
+   
+    font-size: 25px;
+    font-family: serif;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin-left: -50%;
+    
+}
+
+  .nav ul li:nth-child(1){
+    float: right;
+  }
+  .nav ul li:nth-child(2){
+    float: right;
+    }
+.nav ul li:nth-child(3){
+    float: right;
+    }
+
+  .nav ul li a:hover{
+    color: #4CAF50;
+  }
+       
+   .container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+  #Box{
+      box-sizing: content-box;
+      width: 55%;
+      height: 100px;
+      padding: 215px;
+      border: 5px solid black;
+      margin-left:6%;
+      margin-top: 1%;
+      background-color: darkorange;
+      border-radius: 25px;
+
+    }
+    .column {
+  float: left;
+  width: 20%;
+  height: 470px;
+  margin-left: -10px;
+}
+
+.middle{
+  width: 40%;
+  margin-left: 250px;
+
+}
+.right{
+  width: 40%;
+  margin-left: 750px;
+  margin-top:-550px;
+
+}
+
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  </style>
+</head>
+<body>
+
+  <div  id="ClassRoom" ><!--header-->
+
+
+    <div class="nav">
+    
+    <ul>
+      <li>
+        <a href="login.html"><img style="width: 70%;" src="images/login.png"></a>
+      </li>
+      <li>
+        <a href="question.html"><img style="width: 70%;" src="images/question.png"></a>
+</a>
+      </li>
+      <li>
+        <a href="assignment.html"><img style="width: 70%;" src="images/list.png"></a>
+      </li>
+
+    </ul>
+
+  
+
+  </div>
+  </div><!--end header-->
+
+  
+  <a href="index.html" style="text-decoration: none;"><h1 style="margin-top: -3%; margin-left:3%; font:italic bold 40px/35px Georgia, serif; color:grey;" >ClassRoom</h1></a>
+    <div class="container">
+      <div class="w3-container w3-center w3-animate-bottom">
+  <img src="images/img_bg_2.jpg"  style="width:100%;height:650px;">
+  <div style=" font-family: serif;font-size: 300%;color: black;"   class="centered">Contact Us</div>
+
+  <div class="centered">
+  
+    <h2 style="margin-top: 80%; "><span style="color: tomato;"><a href="index.html">Home</a> | Contact</span></h2>
+ </div>
+    </div>
+  </div>
+  
+  <div id="Box">
+    <center>
+    <h2 style="margin-top :-200px;">Get In Touch</h2>   
+    <h4 style="margin-left: 10px;color: white;">For any query please fill up this form that given below</h4>
+    <div class=row>
+
+      <div class="column middle" style="margin-top: 50px; margin-left: 50px;">
+        <label><br>
+        Name
+        </label><br>
+        <input style="padding:10px 30px;border:1px solid #ccc;border-color: black;border-radius: 5px" type="text" name="fullname" placeholder="type your name"><br>
+        <label><br>
+            Email Address
+        </label><br>
+        <input style="padding:10px 30px;border:1px solid #ccc;border-color: black;border-radius:5px" type="email" name="email" placeholder="youremail@gmail.com"><br>
+        <label><br>
+            Phone No.
+        </label><br>
+        <input style="padding:10px 30px;border:1px solid #ccc;border-color: black;border-radius:5px" type="num" name="phone number" placeholder="enter a valid number"><br>
+      </div>
+        
+      <div class="column right" style="margin-top: -510px;">
+     
+          <label style="margin-right: 18%;"><br>
+          
+            Massage
+          
+          </label><br>
+
+          <textarea style="height:250px;width: 470px; border-color: black;border-radius:5px; margin-left: -480px;" type="text" name="massage" placeholder="Any suggesion?">
+          </textarea><br>
+
+          <input style="width: 20%;
+            height: 30px;
+            margin: 8px 0;
+            margin-right: 30px;
+            display: inline-block;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            border:none;
+            cursor: pointer;
+            margin-left: -50px;" type="submit" name="" value="submit">
+      
+        </div>
+      
+      </div>
+   </center>
+  </div>
+
+  
+      <footer class="w3-container w3-teal w3-center w3-margin-top">
+ 
+  <p>Powered by ClassRoom</a></p>
+</footer>
+  
+ </body>
+ </html>
+  
